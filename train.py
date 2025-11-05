@@ -7,7 +7,7 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.callbacks import ModelCheckpoint, EarlyStopping, ReduceLROnPlateau
 
 # ---------- USER CONFIG ----------
-DATASET_PATH = "PlantVillage/PlantVillage"   # path that contains the 9 class folders
+DATASET_PATH = "PlantVillage/PlantVillage"   # path that contains the 9 class 
 IMG_SIZE = (150, 150)
 BATCH_SIZE = 32
 EPOCHS = 10          # change to 15/20 if you want longer training
@@ -136,4 +136,5 @@ plt.savefig("loss_graph.png")
 plt.close()
 
 model.save("plant_model_final.h5")
-print("✅ Training finished.")
+
+print(" Training finished.")
